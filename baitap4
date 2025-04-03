@@ -1,0 +1,15 @@
+def fibonacci(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        fib = [0, 1]
+        for i in range(2, n+1):
+            fib.append(fib[i-1] + fib[i-2])
+        return fib[n]
+
+# Tính số Fibonacci thứ n nhập vào từ người dùng bằng quy hoạch động
+n = int(input("Nhập vào số n để tính Fibonacci: "))
+result = fibonacci(n)
+print(f"Số Fibonacci thứ {n} là: {result}")
