@@ -1,0 +1,9 @@
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+# Tính giai thừa của số n nhập vào từ người dùng
+n = int(input("Nhập vào số nguyên không âm n: "))
+print(f"{n}! = {factorial(n)}")
